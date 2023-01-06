@@ -32,12 +32,12 @@ module.exports = {
     },
     plugins: [
         new container.ModuleFederationPlugin({
-            name:"shared",
-            filename:"remoteEntry.js",
-            exposes:{
-                './SharedComponent':"./src/SharedComponent"
+            name: "shared",
+            filename: "remoteEntry.js",
+            exposes: {
+                './SharedComponent': "./src/SharedComponent"
             },
-            shared:dependencies
+            shared: dependencies
         })
     ]
 }
